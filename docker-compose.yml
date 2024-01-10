@@ -1,0 +1,20 @@
+version: '3'
+services:
+  mc:
+    restart: always
+    image: openjdk:17-slim-bullseye
+    volumes:
+      - ./mc-paper:/game/mc
+    working_dir: /game/mc
+    command: ["java",  "-Xms2G","-Xmx4G","-jar", "./paper-1.20.4-378.jar","nogui"]
+    ports:
+      - 25566:25565
+  db:
+    image: mariadb
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./backup-volume-db:/var/lib/mysql
+      - ./dump:/docker-entrypoint-initdb.d
+    environment:
+      MARIADB_ROOT_PASSWORD: thisismariadb

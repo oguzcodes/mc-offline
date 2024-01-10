@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.18.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1704925077756
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1704925106670
+  login: 1704925040589
+money: '0'
+last-account-name: dofab
+lastlocation:
+  world: 32441321-6d30-4075-85f1-12d25848a405
+  world-name: world
+  x: -7.036030383608073
+  y: 83.0
+  z: 77.25355978054843
+  yaw: 167.84991455078125
+  pitch: 17.54999351501465
+logoutlocation:
+  world: 32441321-6d30-4075-85f1-12d25848a405
+  world-name: world
+  x: -1.6974046988768083
+  y: 96.0
+  z: -0.3155091309696476
+  yaw: -67.3499755859375
+  pitch: 25.350011825561523

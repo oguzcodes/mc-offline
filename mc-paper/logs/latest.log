@@ -1,0 +1,152 @@
+[22:16:57] [ServerMain/WARN]: Failed to get system info for Microarchitecture
+java.lang.NullPointerException: Cannot invoke "String.toUpperCase()" because "this.cpuVendor" is null
+	at oshi.hardware.CentralProcessor$ProcessorIdentifier.queryMicroarchitecture(CentralProcessor.java:825) ~[oshi-core-6.4.5.jar:6.4.5]
+	at oshi.util.Memoizer$1.get(Memoizer.java:61) ~[oshi-core-6.4.5.jar:6.4.5]
+	at oshi.hardware.CentralProcessor$ProcessorIdentifier.getMicroarchitecture(CentralProcessor.java:816) ~[oshi-core-6.4.5.jar:6.4.5]
+	at net.minecraft.SystemReport.setDetail(SystemReport.java:62) ~[paper-1.20.4.jar:git-Paper-378]
+	at net.minecraft.SystemReport.putProcessor(SystemReport.java:153) ~[paper-1.20.4.jar:git-Paper-378]
+	at net.minecraft.SystemReport.lambda$putHardware$4(SystemReport.java:72) ~[paper-1.20.4.jar:git-Paper-378]
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:85) ~[paper-1.20.4.jar:git-Paper-378]
+	at net.minecraft.SystemReport.lambda$putHardware$4(SystemReport.java:72) ~[paper-1.20.4.jar:git-Paper-378]
+	at net.minecraft.SystemReport.lambda$new$2(SystemReport.java:47) ~[paper-1.20.4.jar:git-Paper-378]
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:85) ~[paper-1.20.4.jar:git-Paper-378]
+	at net.minecraft.SystemReport.lambda$new$2(SystemReport.java:47) ~[paper-1.20.4.jar:git-Paper-378]
+	at net.minecraft.CrashReport.<init>(CrashReport.java:34) ~[paper-1.20.4.jar:git-Paper-378]
+	at net.minecraft.CrashReport.preload(CrashReport.java:257) ~[paper-1.20.4.jar:git-Paper-378]
+	at net.minecraft.server.Main.main(Main.java:126) ~[paper-1.20.4.jar:git-Paper-378]
+	at org.bukkit.craftbukkit.Main.main(Main.java:325) ~[paper-1.20.4.jar:git-Paper-378]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+[22:16:59] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[22:17:00] [ServerMain/INFO]: Loaded 1174 recipes
+[22:17:00] [ServerMain/INFO]: Loaded 1271 advancements
+[22:17:00] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[22:17:00] [Server thread/WARN]: ****************************
+[22:17:00] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
+[22:17:00] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
+[22:17:00] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
+[22:17:00] [Server thread/WARN]: ****************************
+[22:17:00] [Server thread/INFO]: Loading properties
+[22:17:01] [Server thread/INFO]: This server is running Paper version git-Paper-378 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: a58e29d)
+[22:17:01] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:17:01] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:17:01] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[22:17:01] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[22:17:01] [Server thread/INFO]: Default game type: SURVIVAL
+[22:17:01] [Server thread/INFO]: Generating keypair
+[22:17:01] [Server thread/INFO]: Starting Minecraft server on *:25565
+[22:17:01] [Server thread/INFO]: Using epoll channel type
+[22:17:01] [Server thread/INFO]: Paper: Using libdeflate (Linux aarch64) compression from Velocity.
+[22:17:01] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux aarch64) cipher from Velocity.
+[22:17:02] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.116
+[22:17:02] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[22:17:02] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.0-dev+24-0af4436
+[22:17:02] [Server thread/INFO]: [LoginSecurity] Loading server plugin LoginSecurity v3.2.0
+[22:17:02] [Server thread/INFO]: [EssentialsSpawn] Loading server plugin EssentialsSpawn v2.21.0-dev+24-0af4436
+[22:17:02] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.21.0-dev+24-0af4436
+[22:17:02] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:17:02] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.116
+[22:17:02] [Server thread/INFO]:         __    
+[22:17:02] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.116
+[22:17:02] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[22:17:02] [Server thread/INFO]: 
+[22:17:02] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[22:17:03] [Server thread/INFO]: [LuckPerms] Loading storage provider... [MARIADB]
+[22:17:03] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Starting...
+[22:17:03] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Start completed.
+[22:17:03] [Server thread/INFO]: [LuckPerms] Loading messaging service... [SQL]
+[22:17:03] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[22:17:03] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[22:17:03] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1438ms)
+[22:17:03] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[22:17:03] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[22:17:03] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[22:17:03] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[22:17:03] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[22:17:03] [Server thread/INFO]: Preparing level "world"
+[22:17:04] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[22:17:04] [Server thread/INFO]: Time elapsed: 128 ms
+[22:17:04] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[22:17:04] [Server thread/INFO]: Time elapsed: 79 ms
+[22:17:04] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[22:17:04] [Server thread/INFO]: Time elapsed: 32 ms
+[22:17:04] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+24-0af4436
+[22:17:04] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[22:17:04] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[22:17:04] [Server thread/INFO]: [Essentials] Starting Essentials ban format conversion
+[22:17:04] [Server thread/INFO]: [Essentials] Attempting to migrate ignore list to UUIDs
+[22:17:04] [Server thread/INFO]: [Essentials] Attempting to migrate legacy userdata keys to Configurate
+[22:17:04] [Server thread/INFO]: [Essentials] Loaded 39095 items from items.json.
+[22:17:04] [Server thread/INFO]: [Essentials] Using locale en
+[22:17:05] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[22:17:05] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[22:17:05] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[22:17:05] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[22:17:05] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.2.0
+[22:17:05] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
+[22:17:05] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "en_us"
+[22:17:05] [Server thread/INFO]: [LoginSecurity] Registering commands...
+[22:17:05] [Server thread/INFO]: [LoginSecurity] Registering listeners...
+[22:17:05] [Server thread/INFO]: [LoginSecurity] Using 1.12+ map captcha renderer
+[22:17:05] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.21.0-dev+24-0af4436
+[22:17:05] [Server thread/INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
+[22:17:05] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.21.0-dev+24-0af4436
+[22:17:05] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[22:17:05] [Server thread/INFO]: Running delayed init tasks
+[22:17:05] [Craft Scheduler Thread - 3 - Essentials/INFO]: [Essentials] Fetching version information...
+[22:17:05] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[22:17:05] [Server thread/INFO]: Done (4.449s)! For help, type "help"
+[22:17:05] [Server thread/INFO]: Timings Reset
+[22:17:05] [Craft Scheduler Thread - 0 - Vault/INFO]: [Vault] Checking for Updates ... 
+[22:17:05] [Craft Scheduler Thread - 0 - Vault/INFO]: [Vault] No new version available
+[22:17:19] [User Authenticator #0/INFO]: UUID of player dofab is f9ec9ae8-dc69-4cc9-9162-99a4d4daf0da
+[22:17:20] [Server thread/INFO]: dofab joined the game
+[22:17:20] [Server thread/INFO]: dofab[/172.18.0.1:55260] logged in with entity id 271 at ([world]-1.5, 96.0, 1.5)
+[22:17:21] [Server thread/WARN]: [Essentials] Permissions lag notice with (LuckPermsHandler). Response took 55.777625ms. Summary: Getting prefix for dofab
+[22:17:21] [Server thread/WARN]: [Essentials] File motd.txt does not exist. Creating one for you.
+[22:17:48] [Server thread/INFO]: dofab issued server command: /tp 1 80 80
+[22:17:57] [Server thread/INFO]: dofab issued server command: /spawn
+[22:18:26] [Server thread/INFO]: Stopping server
+[22:18:26] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.21.0-dev+24-0af4436
+[22:18:26] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.21.0-dev+24-0af4436
+[22:18:26] [Server thread/INFO]: [LoginSecurity] Disabling LoginSecurity v3.2.0
+[22:18:26] [Server thread/INFO]: [LoginSecurity] Waiting for queued tasks...
+[22:18:26] [Server thread/INFO]: [LoginSecurity] ExecutorService shut down, ready to disable.
+[22:18:26] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+24-0af4436
+[22:18:26] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[22:18:26] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[22:18:26] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.116
+[22:18:26] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[22:18:26] [Server thread/INFO]: [LuckPerms] Closing messaging service...
+[22:18:26] [Server thread/INFO]: [LuckPerms] Closing storage...
+[22:18:26] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown initiated...
+[22:18:26] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown completed.
+[22:18:26] [Server thread/INFO]: [LuckPerms] Goodbye!
+[22:18:26] [Server thread/INFO]: Saving players
+[22:18:26] [Server thread/INFO]: dofab lost connection: Server closed
+[22:18:26] [Server thread/INFO]: dofab left the game
+[22:18:26] [Server thread/INFO]: Saving worlds
+[22:18:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[22:18:26] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[22:18:26] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[22:18:26] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[22:18:29] [Server thread/INFO]: [ChunkHolderManager] Saved 2158 block chunks, 675 entity chunks, 0 poi chunks in world 'world' in 2.92s
+[22:18:29] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[22:18:29] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[22:18:29] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[22:18:29] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[22:18:29] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[22:18:30] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 0.93s
+[22:18:30] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:18:30] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[22:18:30] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[22:18:30] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[22:18:30] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[22:18:31] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0.41s
+[22:18:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22:18:31] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[22:18:31] [Server thread/INFO]: Flushing Chunk IO
+[22:18:31] [Server thread/INFO]: Closing Thread Pool
+[22:18:31] [Server thread/INFO]: Closing Server
