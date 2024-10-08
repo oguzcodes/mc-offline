@@ -2,11 +2,11 @@ version: '3'
 services:
   mc:
     restart: always
-    image: openjdk:17-slim-bullseye
+    image: openjdk:21-slim-bullseye
     volumes:
       - ./mc-paper:/game/mc
     working_dir: /game/mc
-    command: ["java",  "-Xms2G","-Xmx4G","-jar", "./paper.jar","nogui"]
+    command: ["java",  "-Xms2G","-Xmx4G","-jar", "./paper-1.21.1-119.jar","nogui"]
     ports:
       - 25566:25565
   db:
