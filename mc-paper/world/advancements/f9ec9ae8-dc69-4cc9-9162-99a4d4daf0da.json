@@ -1,15 +1,1 @@
-{
-  "minecraft:recipes/decorations/crafting_table": {
-    "criteria": {
-      "unlock_right_away": "2024-01-10 22:11:08 +0000"
-    },
-    "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:forest": "2024-01-10 22:11:09 +0000"
-    },
-    "done": false
-  },
-  "DataVersion": 3700
-}
+{"minecraft:recipes/decorations/crafting_table":{"criteria":{"unlock_right_away":"2024-01-10 22:11:08 +0000"},"done":true},"minecraft:adventure/adventuring_time":{"criteria":{"minecraft:forest":"2024-01-10 22:11:09 +0000"},"done":false},"DataVersion":3955}

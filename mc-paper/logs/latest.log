@@ -111,3 +111,8 @@
 [15:46:45] [Craft Scheduler Thread - 1 - Vault/INFO]: [Vault] Checking for Updates ... 
 [15:46:45] [Craft Scheduler Thread - 3 - Essentials/INFO]: [Essentials] Fetching version information...
 [15:46:46] [Craft Scheduler Thread - 1 - Vault/INFO]: [Vault] No new version available
+[15:49:23] [User Authenticator #0/INFO]: UUID of player dofab is f9ec9ae8-dc69-4cc9-9162-99a4d4daf0da
+[15:49:24] [Server thread/INFO]: dofab joined the game
+[15:49:24] [Server thread/INFO]: dofab[/192.168.65.1:49431] logged in with entity id 281 at ([world]-1.6974046988768083, 96.0, -0.3155091309696476)
+[15:50:00] [Server thread/INFO]: dofab lost connection: Disconnected
+[15:50:00] [Server thread/INFO]: dofab left the game
